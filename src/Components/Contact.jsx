@@ -114,7 +114,7 @@ const Contact = () => {
                 <div className="container d-flex align-items-center justify-content-center">
                     <a href="https://github.com/praptii07" target="_blank" rel="noopener noreferrer">
                         <img
-                            src={"github-logo.png"}
+                            src={"github-logo.webp"}
                             alt="GitHub Logo"
                             className="img-fluid"
                             style={{ width: "50px", height: "50px" }}

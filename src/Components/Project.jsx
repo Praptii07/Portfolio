@@ -5,7 +5,7 @@ const Project = () => {
         {
             title: "BoardBattle",
             description: "Board Battle is an engaging online platform designed for chess enthusiasts and strategic thinkers. This website offers an immersive experience where users can play chess, improve their skills, and compete with friends or other players in real-time.",
-            image: "BoardBattle.PNG",
+            image: "BoardBattle.webp",
             liveLink: "https://github.com/praptii07/BoardBattle",
             learnLink: "https://github.com/praptii07/BoardBattle",
             backgroundColor: "#6c63ff",
@@ -13,7 +13,7 @@ const Project = () => {
         {
             title: "DevTask",
             description: "DevTask is a productivity-focused website tailored for developers and project managers. It offers seamless task management, collaboration, and project tracking to help streamline workflows and maximize productivity.",
-            image: "DevTask.PNG",
+            image: "DevTask.webp",
             liveLink: "https://praptidevtask.netlify.app/",
             learnLink: "https://github.com/praptii07/DevTask",
             backgroundColor: "#4CAF50",
@@ -21,7 +21,7 @@ const Project = () => {
         {
             title: "StudentHub",
             description: "StudentHub is a responsive ReactJS web application designed for managing student data with ease. Styled using Bootstrap, it features course-based filtering, a student addition form (available after Google login), and public access to the student list. It includes Google Authentication with a logout option and user name display, offering both functionality and a clean user experience.",
-            image: "StudentHub.PNG",
+            image: "StudentHub.webp",
             liveLink: "https://student-hub-07.vercel.app/",
             learnLink: "https://github.com/Praptii07/StudentHub",
             backgroundColor: "#ff6347",
@@ -29,7 +29,7 @@ const Project = () => {
         {
             title: "Snake Game",
             description: "This Snake game is a classic arcade-style game where the player controls a growing snake that moves in four directions, starting when any key is pressed. The objective is to collect food, which appears randomly on the board, to increase the snake’s length while avoiding collisions with the walls and itself.",
-            image: "snake.PNG",
+            image: "Snake.webp",
             liveLink: "https://snake-game-07.vercel.app/",
             learnLink: "https://github.com/Praptii07/Snake-Game",
             backgroundColor: "#d19d18",

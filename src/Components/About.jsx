@@ -72,7 +72,7 @@ const About = () => {
                             <div className="profile-img-container">
                                 <div className="image-background"></div>
                                 <img
-                                    src={"Me.jpg"}
+                                    src={"Me.webp"}
                                     alt="Me"
                                     className="rounded-circle shadow-lg"
                                     style={{ width: "200px", height: "200px", objectFit: "cover" }}
@@ -105,12 +105,12 @@ const About = () => {
                                 }}
                             >
                                 {[
-                                    { src: "html.png", alt: "HTML", color: "#f06529" },
-                                    { src: "css.png", alt: "CSS", color: "#2965f1" },
-                                    { src: "js.png", alt: "JavaScript", color: "#f7df1e" },
-                                    { src: "react.png", alt: "React", color: "#61dafb" },
-                                    { src: "git.png", alt: "Git", color: "#f05032" },
-                                    { src: "bootstrap.png", alt: "Bootstrap", color: "#563d7c" },
+                                    { src: "Html.webp", alt: "HTML", color: "#f06529" },
+                                    { src: "Css.webp", alt: "CSS", color: "#2965f1" },
+                                    { src: "Js.webp", alt: "JavaScript", color: "#f7df1e" },
+                                    { src: "React.webp", alt: "React", color: "#61dafb" },
+                                    { src: "Git.webp", alt: "Git", color: "#f05032" },
+                                    { src: "Bootstrap.webp", alt: "Bootstrap", color: "#563d7c" },
                                 ].map((icon, index) => (
                                     <div
                                         key={index}
