@@ -1,0 +1,290 @@
+/* Full-screen GIF background */
+html {
+    scroll-behavior: smooth;  /* Enables smooth scrolling */
+}
+
+section {
+    padding-top: 80px;  /* Ensures content is not hidden behind the fixed navbar */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.background-gif-container {
+    background: url('bg.gif') no-repeat center center fixed;
+    animation: anim-ss steps(23) 1s 5s infinite;
+    background-size: cover;
+    padding: 40px;
+}
+/* Centered content styling */
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white; /* For contrast against the GIF */
+    padding: 20px;
+}
+npm
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.text-muted {
+    line-height: 1.8;
+}
+
+.background-gif-container {
+    background-color: #f8f9fa; /* Light background */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.skills-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures it stays centered even with more content */
+}
+
+.circle {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-icon {
+    position: absolute;
+    width: 70px;  /* Adjust size for better alignment */
+    height: 70px;
+    border-radius: 50%;
+    padding: 5px;  /* Space between the image and border */
+    background-color: white; /* Background to enhance visibility */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Depth effect */
+}
+
+.tech-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;  /* Ensure circular images */
+    object-fit: cover;
+    border: 4px solid transparent;  /* Space between image and outer border */
+}
+
+/* Positioned in a circular layout */
+.tech-icon:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); border-color: #e34f26; }  /* HTML */
+.tech-icon:nth-child(2) { top: 25%; right: 5%; transform: translateY(-50%); border-color: #2965f1; }  /* CSS */
+.tech-icon:nth-child(3) { bottom: 25%; right: 5%; transform: translateY(50%); border-color: #f7df1e; }  /* JavaScript */
+.tech-icon:nth-child(4) { bottom: 0; left: 50%; transform: translateX(-50%); border-color: #61dafb; }  /* React */
+.tech-icon:nth-child(5) { bottom: 25%; left: 5%; transform: translateY(50%); border-color: #f05033; }  /* Git */
+.tech-icon:nth-child(6) { top: 25%; left: 5%; transform: translateY(-50%); border-color: #83cd29; }  /* Node */
+.tech-icon:nth-child(7) { top: 50%; right: 50%; transform: translate(50%, -50%); border-color: #563d7c; }  /* Bootstrap */
+
+/* Media Query: Adjusts for smaller screens */
+@media (max-width: 768px) {
+    .circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .tech-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tech-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.placeholder {
+    color: rgba(255, 255, 255, 0.7);  /* Light white for visibility */
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Full height for each section */
+}
+section {
+    padding-top: 100px;
+}
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #d62626;
+    text-decoration-thickness: 3px;
+}
+.project-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-box {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+::placeholder {
+    color: #aaa !important;
+    opacity: 1;
+}
+/* Centering image and adjusting for responsiveness */
+.profile-img-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    margin-bottom: 20px;
+}
+
+.profile-img-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* For large screens (laptop/desktop), ensure the image stays centered */
+@media (min-width: 992px) {
+    .profile-img-container {
+        margin-bottom: 0; /* Removes any extra margin */
+    }
+}
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.from-left {
+    transform: translateX(-50px);
+}
+.from-right {
+    transform: translateX(50px);
+}
+
+.from-left.animate-visible,
+.from-right.animate-visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+/* Fade + Slide In Animation */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateX(40px); /* Start off from 40px to the right */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll.animate-visible {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+}
+
+/* Left-to-Right Animation */
+.from-left .animate-on-scroll {
+    transform: translateX(-40px); /* Start off from the left */
+}
+
+/* Right-to-Left Animation */
+.from-right .animate-on-scroll {
+    transform: translateX(40px); /* Start off from the right */
+}
+
+/* Ensure smooth transitions */
+.project-box, .inner-box {
+    transition: all 0.5s ease;
+}
+/* General Animation */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px); /* Start the form from 50px below */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll.animate-visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to its original position */
+}
+
+/* Add Animation to Form */
+.form-animation {
+    transform: translateY(30px); /* Initial position for the form */
+}
+
+.form-animation.animate-visible {
+    transform: translateY(0); /* Slide up to normal position */
+}
+
+/* Footer Animation */
+footer.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+footer.animate-on-scroll.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
